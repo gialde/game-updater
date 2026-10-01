@@ -1,0 +1,30 @@
+# Скопируйте в config.yaml рядом с .exe и отредактируйте под себя.
+autostart:
+  enabled: true
+  task_name: "GameUpdater"
+
+# Пути к лаунчерам. Если стоят в стандартных местах — оставьте как есть.
+launchers:
+  steam:      "C:\\Program Files (x86)\\Steam\\steam.exe"
+  epic:       "C:\\Program Files (x86)\\Epic Games\\Launcher\\Portal\\Binaries\\Win32\\EpicGamesLauncher.exe"
+  battle_net: "C:\\Program Files (x86)\\Battle.net\\Battle.net Launcher.exe"
+  vk_play:    "C:\\Users\\%USERNAME%\\AppData\\Local\\VKPlay\\GameCenter\\GameCenter.exe"
+  lesta:      "C:\\Program Files (x86)\\Lesta\\GameCenter\\LGC.exe"
+  riot:       "C:\\Riot Games\\Riot Client\\RiotClientServices.exe"
+
+# Список игр. platform — из platforms/. id — идентификатор внутри лаунчера.
+games:
+  - { platform: steam,      id: "730",     name: "Counter-Strike 2" }
+  - { platform: steam,      id: "570",     name: "Dota 2" }
+  - { platform: steam,      id: "578080",  name: "PUBG" }
+  - { platform: steam,      id: "1172470", name: "Apex Legends" }
+  - { platform: epic,       id: "Fortnite", name: "Fortnite" }
+  - { platform: epic,       id: "FallGuys", name: "Fall Guys" }
+  - { platform: battle_net, id: "WTCG",    name: "Hearthstone" }
+  - { platform: vk_play,    id: "warface", name: "Warface" }
+  - { platform: lesta,      id: "wot",     name: "World of Tanks" }
+  - { platform: riot,       id: "league_of_legends", name: "League of Legends" }
+  - { platform: riot,       id: "valorant",          name: "Valorant" }
+
+# Пауза между играми, чтобы не бить канал. Секунды.
+delay_between_games_sec: 30
